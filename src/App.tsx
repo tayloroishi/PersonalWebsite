@@ -1,25 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import ReactDOM from 'react-dom';
+import { Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main>
+      <Switch>
+        <div className="MainPage">
+          <div className = "Wrap">
+            <h1 className = "Intro">
+              Hi there! 
+            </h1>
+            <h1 className = "Intro2">
+              My name is Taylor Oishi and I am a software engineer in training.
+            </h1>
+          </div>
+        </div>
+      </Switch>
+    </main>
   );
 }
 
