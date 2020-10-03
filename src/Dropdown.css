@@ -1,0 +1,77 @@
+.container {
+    display: block;
+    position: absolute;
+    cursor: pointer;
+    min-width: 160px;
+    right: 20px;
+    top: 10px;
+  }
+  
+.bar1, .bar2, .bar3 {
+position: relative;
+display: block;
+left: 115px;
+width: 35px;
+height: 5px;
+background-color: black;
+margin: 6px 0;
+transition: 0.4s;
+cursor: pointer;
+}
+
+.change .container {
+  background-color: white;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Rotate first bar */
+.change .bar1 {
+-webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+transform: rotate(-45deg) translate(-9px, 6px) ;
+}
+
+/* Fade out the second bar */
+.change .bar2 {
+opacity: 0 ;
+}
+
+/* Rotate last bar */
+.change .bar3 {
+-webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+transform: rotate(45deg) translate(-8px, -8px) ;
+}
+
+.Menu {
+  position: relative;
+  display: block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.DropDownContent {
+  display: block;
+  position: absolute;
+  background-color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: 50px;
+  right: 20px;
+}
+
+/* Links inside the dropdown */
+.B {
+  background-color: white;
+  color: black;
+  font-family: 'Gitole';
+  border: transparent;
+  width: 100%;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.B:Hover{
+  background-color: rgb(207, 207, 207);
+}
+
