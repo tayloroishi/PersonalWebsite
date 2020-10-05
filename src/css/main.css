@@ -1,4 +1,3 @@
-
 .uipanel{
     display: block;
     position: fixed;
@@ -71,28 +70,23 @@
 
 
 .topline, .blurb {
-    font-size: 22px;
-    display: block;
-    position: absolute;
-    text-align: center;
-    font-family: 'Gidole';
+    font-family: 'Palatino';
     text-shadow: 0.2px 0.2px rgb(110, 110, 110);
     color: black;
-    width: 60%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
 }
 
-.topline {
-    top: 100px;
-}
-
-.blurb {
-    top: 200px;
-}
-
-.buttoncontainer {
+@media screen and (min-height: 501px) {
+    .topline, .blurb {
+      font-size: 22px;
+    }
+  }
+  
+  @media screen and (max-height: 500px) {
+    .topline, .blurb {
+      font-size: 10px;
+    }
+  }
+  .buttoncontainer {
     display: block;
     position: absolute;
     z-index: 1;

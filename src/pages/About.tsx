@@ -7,10 +7,18 @@ function About() {
       <div>
           <div className="infopage">
               <MapButton/>
-              <h2 className='topline'>Hi there, it is great to meet you !</h2>
-              <p className='blurb'>
-              I am a 24 and currently a student in information technology and working full time as a structural engineer. Having moved from the relaxed hippy town, Byron Bay, to the global city of Sydney, I wish to take part in society's continual progression to a sustainable future and its technological advances. 
-              </p>
+              <div className='textcontainer'>
+                <h2 className='topline'>Just a little bit about me...</h2>
+                <p className='blurb'>
+                I am 24 and currently enrolled in a Master's of Information Technology and working full time as a structural engineer. After 2 years working as a structural engineer, I have had a change of heart. 
+                </p>
+                <p className='blurb'>
+                It always fascinated me how easily one can create and implement software right in front oneself. The ability to see the final product within minutes of compiling a piece of code is quite invigorating and is what ultimately lead me to pursue a career in software engineering. 
+                </p>
+                <p className='blurb'>
+                Currently I am insanely busy with work and uni, but in my free time I like to hike, travel, surf, cook and catch up with friends/colleagues. 
+                </p>
+            </div>
           </div>
       </div>
     );

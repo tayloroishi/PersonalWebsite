@@ -4,7 +4,7 @@ import SideBar from '../components/SideBar';
 
 function MainInfoPage() {
     return(
-        <div>
+        <div className='mainbody'>
             <SideBar />
             <InfoRoutes />
         </div>
