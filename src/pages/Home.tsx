@@ -1,21 +1,20 @@
 import React, { Component } from 'react';
-import './Home.css';
-import './Dropdown.css';
-
-import history from './history';
-import { isTypeQueryNode } from 'typescript';
+import '../css/home.css';
+import '../css/dropdown.css';
+import history from '../components/history';
 
 function Home() {
     return (
-      <div className="HomePage">
-        <div className = "Wrap">
-          <h1 className = "Intro">
+      <div className="homepage">
+        <div className = "wrap">
+          <h1 className = "intro">
             Hi there! 
           </h1>
-          <h1 className = "Intro2">
+          <h1 className = "intro2">
             My name is Taylor Oishi and I am a software engineer in training.
           </h1>
         </div>
+        <h1 className = "info"> Find out more about me! &#8594;</h1>
         <MapButton/>
         <GitHubButton/>
         <LinkedInButton/>
@@ -26,7 +25,7 @@ function Home() {
 
 function MapButton(){
   return (
-    <button className="MapBtn" 
+    <button className="mapbtn" 
     type="button"
     onClick={(e) => {
       e.preventDefault();
@@ -38,7 +37,7 @@ function MapButton(){
 
 function LinkedInButton(){
   return (
-    <button className="LinkedInBtn" 
+    <button className="linkedinbtn" 
     type="button"
     onClick={(e) => {
       e.preventDefault();
@@ -50,7 +49,7 @@ function LinkedInButton(){
 
 function GitHubButton(){
   return (
-    <button className="GitHubBtn" 
+    <button className="githubbtn" 
     type="button"
     onClick={(e) => {
       e.preventDefault();
@@ -104,7 +103,7 @@ class DropDown extends Component<{}, { showMenu: boolean}>{
 
   render() {
     return (
-      <div className="Menu">
+      <div className="menu">
           <div id="content" className="container" onClick={(event) => { 
             myFunction('content'); 
             this.showMenu(event); 
@@ -117,10 +116,12 @@ class DropDown extends Component<{}, { showMenu: boolean}>{
           {
             this.state.showMenu
               ? (
-              <div className="DropDownContent">
-                <button className = "B" onClick={() => history.push('/About')}> About Me </button>
-                <button className = "B"> Menu item 2 </button>
-                <button className = "B"> Menu item 3 </button>
+              <div className="dropdowncontent">
+                <button className = "b" onClick={() => history.push('/Info/About')}> About Me </button>
+                <button className = "b" onClick={() => history.push('/Info/Experience')}> Experience </button>
+                <button className = "b" onClick={() => history.push('/Info/Education')}> Education / Awards </button>
+                <button className = "b" onClick={() => history.push('/Info/Skills')}> Technical Skills </button>
+                <button className = "b" onClick={() => history.push('/Info/Resume')}> Resume / Contact </button>
               </div>
               )
               : (

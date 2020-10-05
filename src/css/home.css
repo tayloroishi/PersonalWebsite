@@ -1,5 +1,5 @@
-.HomePage {
-  background-image: url('images/background1.jpg');
+.homepage {
+  background-image: url('../images/background1.jpg');
   background-size: cover;
   height: 100vh;
   position: static;
@@ -11,7 +11,7 @@
             user-select: none;
 }
 
-.MapBtn {
+.mapbtn {
   position: absolute;
   bottom: 3%;
   background-color: transparent;
@@ -29,11 +29,11 @@
   cursor: pointer;
 }
 
-.MapBtn:Hover {
+.mapbtn:Hover {
   color: rgb(170, 170, 170);
 }
 
-.GitHubBtn, .LinkedInBtn {
+.githubbtn, .linkedinbtn {
   background-color: transparent;
   border: 0px;
   display: block;
@@ -43,31 +43,31 @@
   transition-duration: 0.4s;
 }
 
-.LinkedInBtn {
-  background-image: url('images/linkedin.png');
+.linkedinbtn {
+  background-image: url('../images/linkedin.png');
   right: 20px;
   bottom: 10px;
   width: 37px;
   height: 37px;
 }
 
-.LinkedInBtn:Hover {
-  background-image: url('images/linkedin-hover.png');
+.linkedinbtn:Hover {
+  background-image: url('../images/linkedin-hover.png');
 }
 
-.GitHubBtn:Hover {
-  background-image: url('images/github-hover.png');
+.githubbtn:Hover {
+  background-image: url('../images/github-hover.png');
 }
 
-.GitHubBtn {
-  background-image: url('images/github.png');
+.githubbtn {
+  background-image: url('../images/github.png');
   right: 70px;
   bottom: 10px;
   width: 40px;
   height: 40px;
 }
 
-.Intro, .Intro2 {
+.intro, .intro2 {
   display: block;
   position: relative;
   text-align: center;
@@ -77,18 +77,18 @@
 }
 
 @media screen and (min-height: 401px) {
-  .Intro, .Intro2 {
+  .intro, .intro2 {
     font-size: 35px;
   }
 }
 
 @media screen and (max-height: 400px) {
-  .Intro, .Intro2 {
+  .intro, .ntro2 {
     font-size: 25px;
   }
 }
 
-.Wrap {
+.wrap {
   display: block;
   position: absolute;
   width: 550px;
@@ -99,10 +99,19 @@
   transform: translate(-50%, -50%);
 }
 
-.Intro {
+.info {
+  display: block;
+  position: absolute;
+  font-family: 'Gidole';
+  font-size: 18px;
+  right: 80px;
+  top: 7px;
+}
+
+.intro {
   top: 0%;
 }
 
-.Intro2 {
+.intro2 {
   top: 5%;
 }

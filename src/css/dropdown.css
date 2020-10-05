@@ -41,13 +41,13 @@ opacity: 0 ;
 transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
-.Menu {
+.menu {
   position: relative;
   display: block;
 }
 
 /* Dropdown Content (Hidden by Default) */
-.DropDownContent {
+.dropdowncontent {
   display: block;
   position: absolute;
   background-color: white;
@@ -59,7 +59,7 @@ transform: rotate(45deg) translate(-8px, -8px) ;
 }
 
 /* Links inside the dropdown */
-.B {
+.b {
   background-color: white;
   color: black;
   font-family: 'Gitole';
@@ -71,7 +71,7 @@ transform: rotate(45deg) translate(-8px, -8px) ;
   cursor: pointer;
 }
 
-.B:Hover{
+.b:Hover{
   background-color: rgb(207, 207, 207);
 }
 
