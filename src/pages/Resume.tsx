@@ -29,7 +29,7 @@ function Resume() {
                     </span>
                     <span>Resume:</span>
                     <span>
-                    <a href='../pdfs/Resume.pdf' download="resume.pdf">Resume</a>
+                    <a href= { '../pdfs/Resume.pdf' } download="resume.pdf">Resume</a>
                     </span>
                 </GridTable>
             </div>
