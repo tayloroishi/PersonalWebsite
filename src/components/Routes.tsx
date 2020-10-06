@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-import { Router, Switch, Route } from "react-router-dom";
+import { Router, Switch, Route} from "react-router-dom";
+
+// import { history } from "react-router-hash-history";
 
 import About from "../pages/About";
 import Home from "../pages/Home";
@@ -11,9 +13,9 @@ class Routes extends Component {
         return (
             <Router history={history}>
                 <Switch>
-                    <Route path="/" exact render={() => <Home />} />
-                    <Route path="/Info" render={() => <MainInfoPage />}/>
-                    <Route path="/About" render={() => <About />}/>
+                    <Route path={ process.env.PUBLIC_URL + "/" } exact render={() => <Home />} />
+                    <Route path={ process.env.PUBLIC_URL + "/Info" } render={() => <MainInfoPage />}/>
+                    <Route path={ process.env.PUBLIC_URL + "/About" } render={() => <About />}/>
                 </Switch>
             </Router>
         )

@@ -117,11 +117,11 @@ class DropDown extends Component<{}, { showMenu: boolean}>{
             this.state.showMenu
               ? (
               <div className="dropdowncontent">
-                <button className = "b" onClick={() => history.push('/Info/About')}> About Me </button>
-                <button className = "b" onClick={() => history.push('/Info/Experience')}> Experience </button>
-                <button className = "b" onClick={() => history.push('/Info/Education')}> Education / Awards </button>
-                <button className = "b" onClick={() => history.push('/Info/Skills')}> Technical Skills </button>
-                <button className = "b" onClick={() => history.push('/Info/Resume')}> Resume / Contact </button>
+                <button className = "b" onClick={() => history.push(process.env.PUBLIC_URL + '/Info/About')}> About Me </button>
+                <button className = "b" onClick={() => history.push(process.env.PUBLIC_URL + '/Info/Experience')}> Experience </button>
+                <button className = "b" onClick={() => history.push(process.env.PUBLIC_URL + '/Info/Education')}> Education / Awards </button>
+                <button className = "b" onClick={() => history.push(process.env.PUBLIC_URL + '/Info/Skills')}> Technical Skills </button>
+                <button className = "b" onClick={() => history.push(process.env.PUBLIC_URL + '/Info/Resume')}> Resume / Contact </button>
               </div>
               )
               : (

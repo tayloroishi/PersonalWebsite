@@ -21,7 +21,7 @@ class SideBar extends Component<{}, SideBarState> {
 
     handleClick = (path) => {
         this.setState({activePath: path});
-        history.push(path);
+        history.push(process.env.PUBLIC_URL + path);
     }
 
     render() {
@@ -35,7 +35,7 @@ class SideBar extends Component<{}, SideBarState> {
                     <NavLink path={skills} handleClick={this.handleClick} name='Skills'active={skills === this.state.activePath}/>
                     <NavLink path={resume} handleClick={this.handleClick} name='Resume / Contact' active={resume === this.state.activePath}/>
                 </div>
-                <button className = "backbtn" onClick={() => history.push('/')}/>
+                <button className = "backbtn" onClick={() => history.push(process.env.PUBLIC_URL + '/')}/>
             </div>
         )
     }

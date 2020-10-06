@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Router, Switch, Route } from "react-router-dom";
 
+// import { history } from "react-router-hash-history";
+
 import About from "../pages/About";
 import MainInfoPage from "../app/MainInfoPage";
 import history from './history';
@@ -14,12 +16,12 @@ class InfoRoutes extends Component {
         return (
             <Router history={history}>
                 <Switch>
-                    <Route path="/Info" exact render={() => <MainInfoPage />} />
-                    <Route path="/Info/About" render={() => <About />} />
-                    <Route path="/Info/Experience" render={() => <Experience />} />
-                    <Route path="/Info/Education" render={() => <Education />} />
-                    <Route path="/Info/Skills" render={() => <Skills />} />
-                    <Route path="/Info/Resume" render={() => <Resume />} />
+                    <Route path={ process.env.PUBLIC_URL + "/Info"} exact render={() => <MainInfoPage />} />
+                    <Route path={ process.env.PUBLIC_URL + "/Info/About"} render={() => <About />} />
+                    <Route path={ process.env.PUBLIC_URL + "/Info/Experience"} render={() => <Experience />} />
+                    <Route path={ process.env.PUBLIC_URL + "/Info/Education"} render={() => <Education />} />
+                    <Route path={ process.env.PUBLIC_URL + "/Info/Skills"} render={() => <Skills />} />
+                    <Route path={ process.env.PUBLIC_URL + "/Info/Resume"} render={() => <Resume />} />
                 </Switch>
             </Router>
         )
