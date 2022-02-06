@@ -17,14 +17,13 @@ function Skills() {
                 <h1 className='subsubheading'> Languages: </h1>
                 <GridTable cols='1fr 1fr' gap='10px'>
                 <Skill stars={5} title='Python'/>
-                <Skill stars={4} title='Perl'/>
+                <Skill stars={5} title='C++'/>
                 <Skill stars={4} title='Bash'/>
-                <Skill stars={4} title='C'/>
-                <Skill stars={4} title='C#'/>
-                <Skill stars={4} title='Java'/>
+                <Skill stars={3} title='C'/>
+                <Skill stars={3} title='Java'/>
                 <Skill stars={3} title='Javascript'/>
+                <Skill stars={2} title='C#'/>
                 <Skill stars={2} title='Typescript'/>
-                <Skill stars={1} title='Swift'/>
                 </GridTable>
                 <br/>
                 <h1 className='subsubheading'> Stacks: </h1>
@@ -32,6 +31,7 @@ function Skills() {
                 <Skill stars={5} title='Git'/>
                 <Skill stars={4} title='Linux/Command Line'/>
                 <Skill stars={3} title='ReactJS'/>
+                <Skill stars={2} title='Pandas'/>
                 <Skill stars={2} title='Docker'/>
                 </GridTable>
             </div>

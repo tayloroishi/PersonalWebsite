@@ -4,6 +4,8 @@ import MyLink from '../components/MyLink';
 import TableHeader from '../components/TableHeader';
 import TwoColumn from '../components/TwoColumn';
 import ttwlogo from '../images/ttw.png'
+import applogo from '../images/app.jpeg'
+import optiverlogo from '../images/optiver.png'
 import unswlogo from '../images/unsw.png'
 import oneeightylogo from '../images/180.jpg'
 import '../css/main.css'
@@ -20,13 +22,31 @@ function Experience() {
                 <h1 className='main-title'>Experience</h1>
                 <GridTable cols='2fr 5fr 1fr' gap='10px'>
                     <TableHeader start={1} end={5}>
+                        <MyLink target='_blank' url='https://www.optiver.com'>
+                            Optiver
+                        </MyLink>
+                    </TableHeader>
+                    <span>Software Developer Intern</span>
+                    <span>Worked in the Common Execution Team on the Exchange Simulator</span>
+                    <ExpDate>2021 - 2022</ExpDate>
+                    <span style={{gridRow: 'span 2', height: 'fit-content', textAlign: 'center', alignSelf: 'center', maxWidth: '200px'}}><img className='logo' src={optiverlogo}/></span>
+                    <TableHeader start={1} end={5}>
+                        <MyLink target='_blank' url='https://www.ardillpayne.com.au'>
+                            Ardill Payne & Partners
+                        </MyLink>
+                    </TableHeader>
+                    <span>Structural Engineer</span>
+                    <span>Designed residential houses and small scale comerical centers</span>
+                    <ExpDate>2021 - 2021</ExpDate>
+                    <span style={{gridRow: 'span 2', height: 'fit-content', textAlign: 'center', alignSelf: 'center', maxWidth: '200px'}}><img className='logo' src={applogo}/></span>
+                    <TableHeader start={1} end={5}>
                         <MyLink target='_blank' url='https://www.ttw.com.au/'>
                             Taylor Thomson Whitting
                         </MyLink>
                     </TableHeader>
                     <span>Structural Engineer</span>
-                    <span>Designed the structural components of various projects from aquatic centres to hospitals. I have also helped develop in-house software tools for structural design predominatly using C#.</span>
-                    <ExpDate>2019 - Present</ExpDate>
+                    <span>Designed the structural components of various projects from aquatic centres to hospitals.</span>
+                    <ExpDate>2019 - 2021</ExpDate>
                     <span style={{gridRow: 'span 2', height: 'fit-content', textAlign: 'center', alignSelf: 'center', maxWidth: '200px'}}><img className='logo' src={ttwlogo}/></span>
                     <TableHeader start={1} end={5}>
                     <MyLink target='_blank' url='https://www.unsw.edu.au/'>
