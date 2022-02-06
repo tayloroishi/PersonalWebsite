@@ -10,7 +10,7 @@ function About() {
               <div className='textcontainer'>
                 <h2 className='topline'>Just a little bit about me...</h2>
                 <p className='blurb'>
-                I am 24 and currently enrolled in a Master's of Information Technology and working full time as a structural engineer. After 2 years working as a structural engineer, I have had a change of heart. 
+                I am 25 and currently enrolled in a Master's of Information Technology. After 2 years working as a structural engineer, I have had a change of heart. 
                 </p>
                 <p className='blurb'>
                 It always fascinated me how easily one can create and implement software right in front oneself. The ability to see the final product within minutes of compiling a piece of code is quite invigorating and is what ultimately lead me to pursue a career in software engineering. 
